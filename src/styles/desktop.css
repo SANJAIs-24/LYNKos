@@ -1,0 +1,16 @@
+.desktop {
+  background: url('/wallpapers/win10.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.icon {
+  width: 80px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+}

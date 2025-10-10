@@ -1,0 +1,8 @@
+body { font-family: Arial, Helvetica, sans-serif; margin:0; }
+.center { text-align:center; padding:60px; }
+.row { display:flex; justify-content:center; gap:16px; margin-top:16px; }
+.form { max-width:360px; margin:40px auto; display:flex; flex-direction:column; gap:10px; }
+.form input { padding:8px; font-size:14px; }
+button { padding:8px 12px; cursor:pointer; }
+.small-row { display:flex; justify-content:space-between; font-size:13px; }
+.error { color:crimson; }

@@ -1,0 +1,98 @@
+.lynkos-desktop {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  user-select: none;
+  background: linear-gradient(135deg, #0f4c5c 0%, #118c88 45%, #1db5a6 100%);
+}
+
+/* faint wallpaper with OS logo placeholders */
+.lynkos-wallpaper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.os-logos {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  transform: scale(2);
+}
+
+.logo {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:transparent;
+}
+
+/* icon styles (single source of truth) */
+.desktop-icon {
+  position: absolute;
+  width: 88px;
+  height: 100px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  cursor: grab;
+  color: white;
+  text-align: center;
+  user-select: none;
+  z-index: 20;
+  pointer-events: auto;
+}
+
+.desktop-icon:active {
+  cursor: grabbing;
+  transform: scale(0.98);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+}
+
+.icon-emoji { font-size: 32px; }
+.icon-label { font-size: 12px; opacity: 0.95; }
+
+/* clock bottom-right */
+.clock {
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  z-index: 40;
+}
+
+/* welcome area top-right */
+.welcome {
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  color: white;
+  text-align: right;
+  z-index: 35;
+}
+
+.welcome .sub { font-size: 12px; opacity: 0.85; margin-top: 4px; color: #e7f7f4; }

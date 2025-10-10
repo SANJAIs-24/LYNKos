@@ -1,0 +1,8 @@
+body { font-family: Arial, Helvetica, sans-serif; margin:0; background:#f6f7fb; color:#222; }
+.center { text-align:center; padding:60px; }
+.row { display:flex; justify-content:center; gap:16px; margin-top:16px; }
+.form { max-width:420px; margin:40px auto; padding:18px; background:#fff; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.05); display:flex; flex-direction:column; gap:10px; }
+.form input { padding:10px; font-size:14px; border:1px solid #ddd; border-radius:4px; }
+button { padding:10px 14px; cursor:pointer; border:none; background:#2b6ef6; color:#fff; border-radius:6px; }
+.small-row { display:flex; justify-content:space-between; font-size:13px; margin-top:6px; }
+.error { color:#b00020; }
